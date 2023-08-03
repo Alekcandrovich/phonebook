@@ -3,7 +3,7 @@ import { deleteContact } from '../../redux/contacts/operations';
 import { useDispatch } from 'react-redux';
 import css from './contactListItem.module.css';
 
-export const ContactListItem = ({ contact }) => {
+const ContactListItem = ({ contact }) => {
     const dispatch = useDispatch();
 
     const onDeleteContact = () => {
@@ -23,3 +23,5 @@ export const ContactListItem = ({ contact }) => {
         </li>
     );
 };
+
+export default ContactListItem;

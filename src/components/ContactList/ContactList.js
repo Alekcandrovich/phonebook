@@ -5,7 +5,7 @@ import { deleteContact } from '../../redux/contacts/operations';
 import ContactListItem from '../ContactListItem';
 import css from './contactList.module.css';
 
-export const ContactList = () => {
+const ContactList = () => {
     const contacts = useSelector(selectContacts);
     const filter = useSelector(selectFilter);
 
@@ -28,3 +28,5 @@ export const ContactList = () => {
         </ul>
     );
 };
+
+export default ContactList;
