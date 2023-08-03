@@ -7,8 +7,8 @@ import css from './filter.module.css';
 const Filter = () => {
   const dispatch = useDispatch();
   const filter = useSelector(selectFilter);
-  
-  const handleFilterChange = (event) => {
+
+  const handleFilterChange = event => {
     const { value } = event.target;
     dispatch(changeFilter(value));
   };
@@ -27,7 +27,7 @@ const Filter = () => {
         onChange={handleFilterChange}
       />
     </div>
-  )
+  );
 };
 
 export default Filter;
