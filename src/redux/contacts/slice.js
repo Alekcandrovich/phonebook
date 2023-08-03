@@ -20,9 +20,9 @@ const ContactsSlice = createSlice({
     filter: '',
   },
   reducers: {
-    changeFilter: (state, action) => (
+    changeFilter: (state, action) => {
       state.filter = action.payload
-    )
+    }
   },
   extraReducers: {
     [fetchContacts.pending]: handlePending,
