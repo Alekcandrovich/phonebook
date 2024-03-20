@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import ContactForm from '../components/ContactForm';
 import ContactList from '../components/ContactList';
 import Filter from '../components/Filter';
+import Loader from 'components/Loader';
 import { fetchContacts } from '../redux/contacts/operations';
 import { selectLoading, selectError } from '../redux/contacts/selectors';
 
@@ -21,7 +22,7 @@ export default function Contacts() {
       <ContactForm />
       <h2 className="contacts_title">Contacts</h2>
       {isLoading ? (
-        <p>Loading...</p>
+        <Loader />
       ) : error ? (
         <p>Error: {error}</p>
       ) : (
