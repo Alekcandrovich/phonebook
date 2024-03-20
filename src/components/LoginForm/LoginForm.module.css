@@ -6,7 +6,7 @@
   padding: 30px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
 }
 
 .label {
@@ -39,6 +39,7 @@
   transition: background-color 300ms;
   margin: 0 auto;
 }
+
 .button:hover {
   background-color: #057ed4;
 }
